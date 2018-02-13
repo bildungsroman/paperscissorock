@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>paperscissorock | copywriting, graphic design, web | made in Portland, Oregon</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Add Materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Add fontawesome -->
+        <script defer src="js/fontawesome-all.min.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div id="top"></div>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Header here -->
+
+    <div class="full-width gradient z-depth-2" id="wrapper">
+        <a href="#" id="sticky-button" data-activates="mobile-demo" class="btn-floating transparent button-collapse"><i class="material-icons promo-link">menu</i></a>
+        <header id="header-container" class="header center">
+            <h1 class="title"><i class="fal fa-hand-paper logo-icons"></i><span class="fa-padding"></span><i class="fal fa-hand-scissors logo-icons"></i><span class="fa-padding"></span><i class="fal fa-hand-rock logo-icons"></i><span class="fa-padding"></span></h1>
+            <h1 class="title logo">paperscissorock</h1>
+            <h2 class="subtitle">A full-service design house</h2>
+            <h2 class="subtitle">For all of your copywriting, design, and web needs</h2>
+            <a class="waves-effect waves-light btn blue-grey darken-4" onclick="$('.tap-target').tapTarget('open')">Get in touch!</a>
+        </header>
+        <div class="container">
+        <div class="row">
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons promo-link logo">edit</i>
+                    <h5 class="promo-caption"><a class="smooth-scroll promo-link" href="#writing">Copywriting</a></h5>
+                    <p class="light center subtitle-small">Need to tell the world about your business? We provide clean, original marketing copy that tells a story.</p>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons promo-link logo">style</i>
+                    <h5 class="promo-caption"><a class="smooth-scroll promo-link" href="#design">Graphic Design</a></h5>
+                    <p class="light center subtitle-small">Need something made pretty? We've got you covered for print, web, and everything in between.</p>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons promo-link logo">web</i>
+                    <h5 class="promo-caption"><a class="smooth-scroll promo-link" href="#web">Web Development</a></h5>
+                    <p class="light center subtitle-small">Need a landing page for your startup or a storefront for your grandma's knitting shop? We'll make it happen.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Email button -->
+    <div class="fixed-action-btn horizontal click-to-toggle">
+        <a id="contact" class="waves-effect waves-light btn-floating btn-large blue-grey darken-4 modal-trigger" href="#modal1">
+            <i class="material-icons">email</i>
+        </a>
+    </div>
+    <!-- Tap Target Structure -->
+    <div class="tap-target gradient lighten-3" data-activates="contact">
+        <div class="tap-target-content">
+            <h5 class="small">Contact us</h5>
+            <p>Send us an email and we'll get back to you ASAP!</p>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Get in touch!</h4>
+            <!--form fields-->
+            <form class="row">
+                <form class="col s12">
+                    <form class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </form>
+                    <form class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <select multiple>
+                                    <option value="" disabled selected>Select your services</option>
+                                    <option value="1">Copywriting</option>
+                                    <option value="2">Graphic design</option>
+                                    <option value="3">Web design</option>
+                                </select>
+                                <label>What services are you interested in?</label>
+                            </div>
+                        </form>
+                    <form class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Message:</label>
+                    </div>
+                    </form>
+            </form>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+            <button class="btn waves-effect waves-light blue-grey darken-4 modal-close" name="action">Done
+                <i class="material-icons right">cancel</i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <ul class="side-nav blue-grey lighten-4" id="mobile-demo">
+        <li><a class="promo-link" href="#writing">Copywriting</a></li>
+        <li><a class="promo-link" href="#design">Graphic Design</a></li>
+        <li><a class="promo-link" href="#web">Web Development</a></li>
+    </ul>
+
+    <!-- Tabs go here -->
+    <div id="writing"></div>
+    <div id="paper" class="block blue-grey lighten-5">
+        <nav class="pushpin-demo-nav" data-target="paper">
+            <div class="nav-wrapper blue-grey lighten-4">
+                <div class="container">
+                    <a href="#" class="brand-logo"><i class="fal fa-hand-paper"></i><span class="logo-small"> paper</span></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#!">Our Services</a></li>
+                        <li><a href="#!">Portfolio</a></li>
+                        <li><a href="#!">Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container top-margin">
+            <img class="responsive-img" src="https://static.pexels.com/photos/54632/cat-animal-eyes-grey-54632.jpeg">
+
+        </div>
+    </div>
+
+    <div id="design"></div>
+    <div id="scissor" class="block blue-grey lighten-3">
+        <nav class="pushpin-demo-nav" data-target="scissor">
+            <div class="nav-wrapper  blue-grey lighten-2">
+                <div class="container">
+                    <a href="#" class="brand-logo"><i class="fal fa-hand-scissors"></i><span class="logo-small"> scissor</span></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#!">Our Services</a></li>
+                        <li><a href="#!">Portfolio</a></li>
+                        <li><a href="#!">Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="web"></div>
+    <div id="rock" class="block blue-grey">
+        <nav class="pushpin-demo-nav" data-target="rock">
+            <div class="nav-wrapper blue-grey lighten-1">
+                <div class="container">
+                    <a href="#" class="brand-logo"><i class="fal fa-hand-rock"></i><span class="logo-small"> rock</span></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#!">Our Services</a></li>
+                        <li><a href="#!">Portfolio</a></li>
+                        <li><a href="#!">Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About</h5>
+                    <p class="grey-text text-lighten-4">Paperscissorock is the best design house in the world, etc..</p>
+                    <p>Lorem ipsum dolor amet portland tousled tumblr, pop-up distillery asymmetrical drinking vinegar edison bulb. Cillum tumblr aesthetic, fanny pack ethical meggings irure ea pariatur fugiat aliquip YOLO. Meh prism keffiyeh direct trade drinking vinegar hammock. Man braid tofu VHS, scenester austin nulla four dollar toast yr. </p>
+                    <p>Ut subway tile in, sunt farm-to-table kinfolk ennui. Shoreditch culpa exercitation, pug unicorn put a bird on it vaporware la croix beard kale chips dreamcatcher polaroid whatever. Letterpress cloud bread hexagon, eiusmod mollit taxidermy DIY brooklyn live-edge succulents eu echo park nulla laboris selvage. Pok pok irure sriracha asymmetrical cornhole sint tbh vexillologist portland offal ethical. Bitters literally raw denim edison bulb marfa authentic everyday carry laborum. Chicharrones brunch flannel lo-fi selvage poutine offal lomo waistcoat gochujang.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Let's Get Social!</h5>
+                    <div class="footer-socials mb-5 flex-center">
+                        <!--Instagram-->
+                        <a class="icons-sm ins-ic" href="https://www.instagram.com/paperscissorock/" target="_blank"><i class="fab fa-instagram fa-lg white-text mr-md-4"> </i></a>
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fab fa-facebook-square fa-lg white-text mr-md-4"> </i></a>
+                        <!--Twitter-->
+                        <a class="icons-sm tw-ic"><i class="fab fa-twitter-square fa-lg white-text mr-md-4"> </i></a>
+                        <!--Linkedin-->
+                        <a class="icons-sm li-ic"><i class="fab fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+                        <!--Behance-->
+                        <a class="icons-sm li-ic"><i class="fab fa-behance-square fa-lg white-text mr-md-4"> </i></a>
+                        <!--Pinterest-->
+                        <a class="icons-sm pin-ic"><i class="fab fa-pinterest-square fa-lg white-text"> </i></a>
+                    </div>
+                    <div><br /><br /></div>
+                    <h5 class="white-text">As seen on Instagram</h5>
+                    <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/1453a5f4b3d9505593757095d2639ced.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        © 2018 Copyright paperscissorock&nbsp;&nbsp;|&nbsp;&nbsp;made in Portland, Oregon
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <a class="smooth-scroll grey-text text-lighten-4" href="#top">Back to top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- scripts go here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>if (!window.jQuery) { document.write('<script src="bin/jquery-3.2.1.min.js"><\/script>'); }
+    </script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--</script>-->
+    <script src="js/prism.js"></script>
+    <!--<script src="bin/materialize.js"></script>-->
+    <script src="js/init.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
