@@ -166,10 +166,6 @@ h5.small {
     text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
 }
 
-.fa-hand-paper {
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
-}
-
 #wrapper {
     min-height: 100%;
 }
