@@ -130,6 +130,9 @@ html, body, .block {
 .menu-small {
     padding-top: 20px;
     padding-left: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .icons-sm {
@@ -163,8 +166,16 @@ h5.small {
     text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
 }
 
+.fa-hand-paper {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
+}
+
 #wrapper {
     min-height: 100%;
+}
+
+.bottom-padding {
+    padding-bottom: 20px;
 }
 
 .promo-link {
@@ -225,7 +236,7 @@ h5.small {
 }
 
 .gradient {
-    background-image: linear-gradient(45deg, rgb(76, 217, 100) 0%, rgb(90, 200, 250) 100%);
+    background-image: linear-gradient(45deg, rgb(90, 200, 250) 0%, rgb(76, 217, 100) 100%);
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
@@ -256,6 +267,7 @@ h5.small {
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
+    z-index: -1;
 }
 
 @keyframes animate-bg {
@@ -295,10 +307,11 @@ h5.small {
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
 }
-.pop:hover i,
-.pop:hover h5 {
+.pop:hover i {
     color: #b2ebf2;
 }
+
+
 
 /* input field colors */
 
