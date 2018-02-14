@@ -19,11 +19,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Add fontawesome -->
-    <script defer src="js/fontawesome-all.min.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/fontawesome-all.css">
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
 
 </head>
+
+<!--TODO: make sticky menu float over whole page-->
+
 <body>
 <div id="top"></div>
 <!--[if lte IE 9]>
@@ -31,36 +33,37 @@
 <![endif]-->
 
 <!-- Header here -->
-
 <div class="full-width animated-background z-depth-2" id="wrapper">
+    <!--  upper left menu button  -->
     <a href="#" id="sticky-button" data-activates="mobile-demo" class="transparent button-collapse menu-small"><i class="material-icons medium promo-link">menu</i></a>
+    <!--  header  -->
     <header id="header-container" class="header center">
-        <h1 class="title"><i class="fal fa-hand-paper logo-icons"></i><span class="fa-padding"></span><i class="fal fa-hand-scissors logo-icons"></i><span class="fa-padding"></span><i class="fal fa-hand-rock logo-icons"></i><span class="fa-padding"></span></h1>
+        <h1 class="title"><i class="fal fa-hand-paper"></i><span class="fa-padding"></span><i class="fal fa-hand-scissors logo-icons"></i><span class="fa-padding"></span><i class="fal fa-hand-rock logo-icons"></i><span class="fa-padding"></span></h1>
         <h1 class="title logo">paperscissorock</h1>
         <h2 class="subtitle">A full-service design house</h2>
         <h2 class="subtitle">For all of your copywriting, design, and web needs</h2>
         <a class="waves-effect waves-light btn blue-grey darken-4" onclick="$('.tap-target').tapTarget('open')">Get in touch!</a>
     </header>
-    <div class="container">
+    <div class="container bottom-padding">
         <div class="row">
-            <div class="col s4">
-                <div class="center promo promo-example pop">
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example pop"><a class="smooth-scroll promo-link" href="#writing">
                     <i class="large material-icons promo-link logo">edit</i>
-                    <h5 class="promo-caption"><a class="smooth-scroll promo-link" href="#writing">Copywriting</a></h5>
+                    <h5 class="promo-caption">Copywriting</h5></a>
                     <p class="light center subtitle-small">Need to tell the world about your business? We provide clean, original marketing copy that tells a story.</p>
                 </div>
             </div>
-            <div class="col s4">
-                <div class="center promo promo-example pop">
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example pop"><a class="smooth-scroll promo-link" href="#design">
                     <i class="large material-icons promo-link logo">style</i>
-                    <h5 class="promo-caption"><a class="smooth-scroll promo-link" href="#design">Graphic Design</a></h5>
+                    <h5 class="promo-caption">Graphic Design</h5></a>
                     <p class="light center subtitle-small">Need something made pretty? We've got you covered for print, web, and everything in between.</p>
                 </div>
             </div>
-            <div class="col s4">
-                <div class="center promo promo-example pop">
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example pop"><a class="smooth-scroll promo-link" href="#web">
                     <i class="large material-icons promo-link logo">web</i>
-                    <h5 class="promo-caption"><a class="smooth-scroll promo-link" href="#web">Web Development</a></h5>
+                    <h5 class="promo-caption">Web Development</h5></a>
                     <p class="light center subtitle-small">Need a landing page for your startup or a storefront for your grandma's knitting shop? We'll make it happen.</p>
                 </div>
             </div>
@@ -134,13 +137,16 @@
 </div>
 
 <!-- Mobile nav -->
-<ul class="side-nav blue-grey lighten-4" id="mobile-demo">
-    <li><a class="promo-link" href="#writing">Copywriting</a></li>
-    <li><a class="promo-link" href="#design">Graphic Design</a></li>
-    <li><a class="promo-link" href="#web">Web Development</a></li>
+<ul class="side-nav transparent" id="mobile-demo">
+    <li><a class="promo-link" href="#"></a></li>
+    <li><a class="promo-link white-text" href="#writing">Copywriting</a></li>
+    <li><a class="promo-link white-text" href="#design">Graphic Design</a></li>
+    <li><a class="promo-link white-text" href="#web">Web Development</a></li>
 </ul>
 
-<!-- Tabs go here -->
+<!-- Section tabs go here -->
+
+<!-- PAPER -->
 <div id="writing"></div>
 <div id="paper" class="block blue-grey lighten-5">
     <nav class="pushpin-demo-nav" data-target="paper">
@@ -159,7 +165,10 @@
 
 
     </div>
+
 </div>
+
+<!-- SCISSOR -->
 
 <div id="design"></div>
 <div id="scissor" class="block blue-grey lighten-3">
@@ -176,6 +185,8 @@
         </div>
     </nav>
 </div>
+
+<!-- ROCK -->
 
 <div id="web"></div>
 <div id="rock" class="block blue-grey">
@@ -200,13 +211,13 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">About</h5>
-                <p class="grey-text text-lighten-4">Paperscissorock is the best design house in the world, etc..</p>
-                <p>Lorem ipsum dolor amet portland tousled tumblr, pop-up distillery asymmetrical drinking vinegar edison bulb. Cillum tumblr aesthetic, fanny pack ethical meggings irure ea pariatur fugiat aliquip YOLO. Meh prism keffiyeh direct trade drinking vinegar hammock. Man braid tofu VHS, scenester austin nulla four dollar toast yr. </p>
-                <p>Ut subway tile in, sunt farm-to-table kinfolk ennui. Shoreditch culpa exercitation, pug unicorn put a bird on it vaporware la croix beard kale chips dreamcatcher polaroid whatever. Letterpress cloud bread hexagon, eiusmod mollit taxidermy DIY brooklyn live-edge succulents eu echo park nulla laboris selvage. Pok pok irure sriracha asymmetrical cornhole sint tbh vexillologist portland offal ethical. Bitters literally raw denim edison bulb marfa authentic everyday carry laborum. Chicharrones brunch flannel lo-fi selvage poutine offal lomo waistcoat gochujang.</p>
+                <h5 class="white-text light">About</h5>
+                <p class="grey-text text-lighten-4 light">Paperscissorock is the best design house in the world, etc.</p>
+                <p class="grey-text text-lighten-4 light">Lorem ipsum dolor amet portland tousled tumblr, pop-up distillery asymmetrical drinking vinegar edison bulb. Cillum tumblr aesthetic, fanny pack ethical meggings irure ea pariatur fugiat aliquip YOLO. Meh prism keffiyeh direct trade drinking vinegar hammock. Man braid tofu VHS, scenester austin nulla four dollar toast yr. </p>
+                <p class="grey-text text-lighten-4 light">Ut subway tile in, sunt farm-to-table kinfolk ennui. Shoreditch culpa exercitation, pug unicorn put a bird on it vaporware la croix beard kale chips dreamcatcher polaroid whatever. Letterpress cloud bread hexagon, eiusmod mollit taxidermy DIY brooklyn live-edge succulents eu echo park nulla laboris selvage. Pok pok irure sriracha asymmetrical cornhole sint tbh vexillologist portland offal ethical. Bitters literally raw denim edison bulb marfa authentic everyday carry laborum. Chicharrones brunch flannel lo-fi selvage poutine offal lomo waistcoat gochujang.</p>
             </div>
             <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Let's Get Social!</h5>
+                <h5 class="white-text light">Let's Get Social!</h5>
                 <div class="footer-socials mb-5 flex-center">
                     <!--Instagram-->
                     <a class="icons-sm ins-ic" href="https://www.instagram.com/paperscissorock/" target="_blank"><i class="fab fa-instagram fa-lg white-text mr-md-4"> </i></a>
@@ -222,7 +233,7 @@
                     <a class="icons-sm pin-ic"><i class="fab fa-pinterest-square fa-lg white-text"> </i></a>
                 </div>
                 <div><br /><br /></div>
-                <h5 class="white-text">As seen on Instagram</h5>
+                <h5 class="white-text light">As seen on Instagram</h5>
                 <div class="card">
                     <div class="card-image">
                         <img src="https://static.pexels.com/photos/54632/cat-animal-eyes-grey-54632.jpeg">
