@@ -149,13 +149,13 @@ h5.small {
 }   /* increase the height and width as you desire */
 
 .logo {
-    font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
+    font: 400 100px/1.2 'Leckerli One', cursive;
     color: #000;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
 }
 
 .logo-small {
-    font-family: 'Leckerli One', Helvetica, sans-serif;
+    font-family: 'Leckerli One', cursive;
     /*text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);*/
 }
 
