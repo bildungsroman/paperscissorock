@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Font Awesome 5 Pro';
-    src:  url('/fontawesome/webfonts/fa-brands-400.woff2') format('woff2'),
-    url('/fontawesome/webfonts/fa-light-300.woff2') format('woff2');,
-    url('/fontawesome/webfonts/fa-regular-400.woff2') format('woff2');,
-    url('/fontawesome/webfonts/fa-solid-900.woff2') format('woff2');
+    src:  url('/fontawesome/fa-brands-400.woff2') format('woff2'),
+    url('/fontawesome/fa-light-300.woff2') format('woff2');,
+    url('/fontawesome/fa-regular-400.woff2') format('woff2');,
+    url('/fontawesome/fa-solid-900.woff2') format('woff2');
 }
 
 
