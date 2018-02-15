@@ -166,8 +166,22 @@ h5.small {
     text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
 }
 
+p a {
+    text-decoration: none;
+    color: #b2ebf2;
+}
+
+p a:hover {
+    text-decoration: none;
+    color: #80deea;
+}
+
 #wrapper {
     min-height: 100%;
+}
+
+.sm-circle {
+    max-height: 200px;
 }
 
 .bottom-padding {
